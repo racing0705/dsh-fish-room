@@ -1,0 +1,10 @@
+# 插件自己的挂载声明。
+#
+# 这里只负责「让 loader 认得这个插件」；真正的运行配置（roomUrl / token 等）
+# 写在 ~/.dsh/profiles/desktop/cordis.patch.yml 的 `- id: fish-room-panel` 段里。
+#
+# 注意：profile 侧再 insert 一次同 id 会触发 loader 的 duplicate loader entry id，
+# 所以这里只声明 insert，配置放 profile。
+- insert:
+    - id: fish-room-panel
+      name: dsh-fish-room-panel

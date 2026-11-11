@@ -1,0 +1,12 @@
+{
+  "pid": 16436,
+  "idle": {
+    "alive": true,
+    "pid": 16436,
+    "cpuPercent": 0,
+    "workingSetMB": 82.3,
+    "peakWS_MB": 95.6
+  },
+  "sysIdle": 19,
+  "at": "2026-11-11T07:56:55.622Z"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "dsh-fish-room-panel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "大肥鱼的房间：把 feiyu-room-template 的 /room/ 页面挂进 DSH 中央主面板（iframe 容器 + 帧率/内存实测 + 面板关闭即停渲染）",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "src",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "dsh": ">=0.1.7-rc.2"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "selftest": "node index.js --selftest"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "meta": {
+    "title": "大肥鱼的房间",
+    "description": "把 13100 端口的小蓝鱼房间挂进 DSH 中央主面板；面板关掉就停渲染。"
+  }
+}

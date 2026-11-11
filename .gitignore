@@ -1,0 +1,38 @@
+# 依赖与敏感文件
+
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 运行时状态（含会话、令牌、聊天记录）
+state/
+logs/
+*.log
+bridge.lock
+
+# 真实配置（本仓库只提交 config.example.json）
+config.json
+config.local.json
+
+# 模型与视频大资产（体积过大，从原作者仓库取）
+*.glb
+anime maid 3d model.glb
+
+# 下载缓存
+_dl/
+*.zip
+
+# 探测器输出
+_probe/
+_perf-*.jsonl
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# DSH 上传锁
+.dsh-ops-update-*.lock
